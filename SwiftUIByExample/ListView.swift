@@ -15,5 +15,6 @@ struct ListView_Previews: PreviewProvider {
 
     static var previews: some View {
         ListView()
+            .previewLayout(.fixed(width: 400, height: 300))
     }
 }
