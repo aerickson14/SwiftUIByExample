@@ -1,0 +1,10 @@
+--stripunusedargs closure-only
+--wraparguments before-first
+--wrapcollections before-first
+--trimwhitespace always
+--commas inline
+--header strip
+--self init-only
+--disable unusedArguments
+--disable spaceInsideBrackets
+--disable blankLinesAtStartOfScope
