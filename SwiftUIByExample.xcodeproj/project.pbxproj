@@ -13,6 +13,8 @@
 		538DA9732429824C00E0E7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538DA9722429824C00E0E7EB /* Assets.xcassets */; };
 		538DA9762429824C00E0E7EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538DA9752429824C00E0E7EB /* Preview Assets.xcassets */; };
 		538DA9792429824C00E0E7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538DA9772429824C00E0E7EB /* LaunchScreen.storyboard */; };
+		53B7967F2429A6C900F6322A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7967E2429A6C900F6322A /* ListViewController.swift */; };
+		53B796812429A7CC00F6322A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B796802429A7CC00F6322A /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		538DA9752429824C00E0E7EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		538DA9782429824C00E0E7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		538DA97A2429824C00E0E7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53B7967E2429A6C900F6322A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		53B796802429A7CC00F6322A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				538DA96C2429824A00E0E7EB /* AppDelegate.swift */,
 				538DA96E2429824A00E0E7EB /* SceneDelegate.swift */,
 				538DA9702429824A00E0E7EB /* ContentView.swift */,
+				53B7967E2429A6C900F6322A /* ListViewController.swift */,
+				53B796802429A7CC00F6322A /* ListView.swift */,
 				538DA9722429824C00E0E7EB /* Assets.xcassets */,
 				538DA9772429824C00E0E7EB /* LaunchScreen.storyboard */,
 				538DA97A2429824C00E0E7EB /* Info.plist */,
@@ -170,6 +176,8 @@
 			files = (
 				538DA96D2429824A00E0E7EB /* AppDelegate.swift in Sources */,
 				538DA96F2429824A00E0E7EB /* SceneDelegate.swift in Sources */,
+				53B796812429A7CC00F6322A /* ListView.swift in Sources */,
+				53B7967F2429A6C900F6322A /* ListViewController.swift in Sources */,
 				538DA9712429824A00E0E7EB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
