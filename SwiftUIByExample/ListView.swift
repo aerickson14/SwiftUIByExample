@@ -8,9 +8,9 @@ struct ListView: View {
         List {
             ForEach(1 ... numRows, id: \.self) { row -> AnyView in
                 if row % 2 == 0 {
-                    return AnyView(Text("Hello, World \(row)"))
+                    return Text("Hello, World \(row)").typeErased
                 } else {
-                    return AnyView(/*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/)
+                    return EmptyView().typeErased
                 }
             }
         }
@@ -26,5 +26,11 @@ struct ListView_Previews: PreviewProvider {
             ListView(numRows: 10)
                 .previewLayout(.fixed(width: 400, height: 300))
         }
+    }
+}
+
+extension View {
+    var typeErased: AnyView {
+        AnyView(self)
     }
 }
