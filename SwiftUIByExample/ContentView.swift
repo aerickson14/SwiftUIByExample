@@ -19,8 +19,8 @@ struct ContentView: View {
                 .foregroundColor(.green)
             ForEach(rules, id: \.self) { rule in
                 Text(rule)
-                    .background(Color.red)
                     .padding(16)
+                    .background(Color.red)
             }
         }
     }
