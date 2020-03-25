@@ -2,35 +2,28 @@ import SwiftUI
 
 struct AddRuleView: View {
 
-    @Binding var isPresented: Bool
-    @Binding var rules: [String]
-    @State private var newRule: String
-
+    @ObservedObject var viewModel: AddRuleViewModel
     init(isPresented: Binding<Bool>, rules: Binding<[String]>) {
-        self._isPresented = isPresented
-        self._rules = rules
-        self._newRule = State(initialValue: "")
+        self.viewModel = AddRuleViewModel(
+            isPresented: isPresented,
+            rules: rules
+        )
     }
 
     var body: some View {
         Form {
             VStack(alignment: .leading, spacing: 16) {
                 Text("New Rule:")
-                TextField("Enter a rule", text: $newRule)
+                TextField("Enter a rule", text: $viewModel.newRule)
                 Spacer()
                 HStack {
                     Spacer()
                     PrimaryButton(title: "Submit", action: {
-                        self.submitNewRule()
+                        self.viewModel.submitNewRule()
                     })
                 }
             }
         }
-    }
-
-    func submitNewRule() {
-        rules.append(newRule)
-        isPresented = false
     }
 }
 

@@ -2,15 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var rules: [String] = [
-        "Don't forget to wash your hands",
-        "Don't touch your face",
-        "Practice physical distancing",
-        "No international travel",
-        "Work from home",
-        "Self quarantine if you're experiencing symptoms"
-    ]
-    @State private var showAddRule: Bool = false
+    @ObservedObject var viewModel = ContentViewModel()
 
     var body: some View {
         VStack(alignment: .leading, spacing: 1) {
@@ -24,7 +16,7 @@ struct ContentView: View {
             }
             .padding(16)
             .background(Color.pastelGreen)
-            ForEach(rules, id: \.self) { rule in
+            ForEach(viewModel.rules, id: \.self) { rule in
                 HStack {
                     Text(rule)
                     Spacer()
@@ -35,13 +27,13 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
-                PrimaryButton(title: "Add Rule", action: { self.showAddRule = true })
+                PrimaryButton(title: "Add Rule", action: { self.viewModel.showAddRule = true })
             }.padding()
         }
         .sheet(
-            isPresented: $showAddRule,
+            isPresented: $viewModel.showAddRule,
             content: {
-                AddRuleView(isPresented: self.$showAddRule, rules: self.$rules)
+                AddRuleView(isPresented: self.$viewModel.showAddRule, rules: self.$viewModel.rules)
             }
         )
     }
