@@ -24,6 +24,12 @@ struct ContentView: View {
                 .padding(16)
                 .background(Color.pastelRed)
             }
+            HStack {
+                Spacer()
+                ActivityIndicator(isAnimating: .constant(true))
+                Spacer()
+            }
+            .padding()
             Spacer()
             HStack {
                 Spacer()
