@@ -12,7 +12,7 @@ struct ContentView: View {
     ]
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 8) {
             Text("Hello world!")
             ForEach(rules, id: \.self) { rule in
                 Text(rule)
