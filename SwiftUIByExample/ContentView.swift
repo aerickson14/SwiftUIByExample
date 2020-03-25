@@ -19,6 +19,7 @@ struct ContentView: View {
                 .foregroundColor(.green)
             ForEach(rules, id: \.self) { rule in
                 Text(rule)
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .padding(16)
                     .background(Color.red)
             }
