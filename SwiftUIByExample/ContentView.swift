@@ -4,6 +4,7 @@ struct ContentView: View {
 
     var body: some View {
         Text("Hello world!")
+        Text("Don't forget to wash your hands")
     }
 }
 
