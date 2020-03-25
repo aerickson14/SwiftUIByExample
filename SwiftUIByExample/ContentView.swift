@@ -14,8 +14,13 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Hello world!")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.green)
             ForEach(rules, id: \.self) { rule in
                 Text(rule)
+                    .background(Color.red)
+                    .padding(16)
             }
         }
     }
