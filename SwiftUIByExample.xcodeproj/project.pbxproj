@@ -21,6 +21,7 @@
 		53B79689242AE85D00F6322A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B79688242AE85D00F6322A /* ContentViewModel.swift */; };
 		53B7968B242AE8CE00F6322A /* AddRuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7968A242AE8CE00F6322A /* AddRuleViewModel.swift */; };
 		53B7968D242AEB3500F6322A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7968C242AEB3500F6322A /* ActivityIndicator.swift */; };
+		53B7968F242AEFC800F6322A /* RulesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7968E242AEFC800F6322A /* RulesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		53B79688242AE85D00F6322A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		53B7968A242AE8CE00F6322A /* AddRuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleViewModel.swift; sourceTree = "<group>"; };
 		53B7968C242AEB3500F6322A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		53B7968E242AEFC800F6322A /* RulesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				53B79682242AE03500F6322A /* Color+Extension.swift */,
 				53B79686242AE49200F6322A /* PrimaryButton.swift */,
 				53B7968C242AEB3500F6322A /* ActivityIndicator.swift */,
+				53B7968E242AEFC800F6322A /* RulesService.swift */,
 				538DA9722429824C00E0E7EB /* Assets.xcassets */,
 				538DA9772429824C00E0E7EB /* LaunchScreen.storyboard */,
 				538DA97A2429824C00E0E7EB /* Info.plist */,
@@ -200,6 +203,7 @@
 				53B79689242AE85D00F6322A /* ContentViewModel.swift in Sources */,
 				53B7968B242AE8CE00F6322A /* AddRuleViewModel.swift in Sources */,
 				53B7967F2429A6C900F6322A /* ListViewController.swift in Sources */,
+				53B7968F242AEFC800F6322A /* RulesService.swift in Sources */,
 				53B79687242AE49200F6322A /* PrimaryButton.swift in Sources */,
 				538DA9712429824A00E0E7EB /* ContentView.swift in Sources */,
 				53B7968D242AEB3500F6322A /* ActivityIndicator.swift in Sources */,

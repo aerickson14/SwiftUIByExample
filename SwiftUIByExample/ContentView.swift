@@ -24,12 +24,14 @@ struct ContentView: View {
                 .padding(16)
                 .background(Color.pastelRed)
             }
-            HStack {
-                Spacer()
-                ActivityIndicator(isAnimating: .constant(true))
-                Spacer()
+            if viewModel.isLoading {
+                HStack {
+                    Spacer()
+                    ActivityIndicator(isAnimating: .constant(true))
+                    Spacer()
+                }
+                .padding()
             }
-            .padding()
             Spacer()
             HStack {
                 Spacer()
