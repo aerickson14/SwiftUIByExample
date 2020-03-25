@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    var rules: [String] = [
+    @State private var rules: [String] = [
         "Don't forget to wash your hands",
         "Don't touch your face",
         "Practice physical distancing",
@@ -35,23 +35,13 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
-                Button(
-                    action: {},
-                    label: {
-                        Text("Add Rule")
-                            .fontWeight(.semibold)
-                            .padding(.vertical, 8)
-                            .padding(.horizontal, 16)
-                            .background(Color.lightGray)
-                            .cornerRadius(8)
-                    }
-                )
+                PrimaryButton(title: "Add Rule", action: { self.showAddRule = true })
             }.padding()
         }
         .sheet(
             isPresented: $showAddRule,
             content: {
-                AddRuleView()
+                AddRuleView(isPresented: self.$showAddRule, rules: self.$rules)
             }
         )
     }
