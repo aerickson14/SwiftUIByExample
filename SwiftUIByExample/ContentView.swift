@@ -12,19 +12,26 @@ struct ContentView: View {
     ]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Hello world!")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.green)
+        VStack(alignment: .leading, spacing: 1) {
+            HStack {
+                Text("Hello world!")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Image(systemName: "globe")
+                    .font(.title)
+                Spacer()
+            }
+            .padding(16)
+            .background(Color.pastelGreen)
             ForEach(rules, id: \.self) { rule in
                 HStack {
                     Text(rule)
                     Spacer()
                 }
-                    .padding(16)
-                    .background(Color.red)
+                .padding(16)
+                .background(Color.pastelRed)
             }
+            Spacer()
         }
     }
 }
