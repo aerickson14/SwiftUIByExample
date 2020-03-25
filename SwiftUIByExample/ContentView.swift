@@ -18,8 +18,10 @@ struct ContentView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.green)
             ForEach(rules, id: \.self) { rule in
-                Text(rule)
-                    .frame(minWidth: 0, maxWidth: .infinity)
+                HStack {
+                    Text(rule)
+                    Spacer()
+                }
                     .padding(16)
                     .background(Color.red)
             }
