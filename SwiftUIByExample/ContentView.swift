@@ -10,6 +10,7 @@ struct ContentView: View {
         "Work from home",
         "Self quarantine if you're experiencing symptoms"
     ]
+    @State private var showAddRule: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 1) {
@@ -32,7 +33,27 @@ struct ContentView: View {
                 .background(Color.pastelRed)
             }
             Spacer()
+            HStack {
+                Spacer()
+                Button(
+                    action: {},
+                    label: {
+                        Text("Add Rule")
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 16)
+                            .background(Color.lightGray)
+                            .cornerRadius(8)
+                    }
+                )
+            }.padding()
         }
+        .sheet(
+            isPresented: $showAddRule,
+            content: {
+                AddRuleView()
+            }
+        )
     }
 }
 
